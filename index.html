@@ -10,6 +10,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: "Segoe UI", sans-serif;
@@ -21,18 +25,37 @@
         header {
             background: linear-gradient(135deg, #111827, #1f2933);
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px 30px;
             text-align: center;
         }
 
         header h1 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-size: 2.5rem;
         }
 
         header p {
+            margin-bottom: 20px;
             font-size: 1.1rem;
             opacity: 0.9;
+        }
+
+        /* 🔷 Navigation Bar (below name) */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-decoration: underline;
         }
 
         section {
@@ -74,8 +97,13 @@
             margin-top: 40px;
         }
 
-        /* 📱 Mobile friendly */
+        /* 📱 Mobile Friendly */
         @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
             header h1 {
                 font-size: 2rem;
             }
@@ -93,9 +121,17 @@
 <header>
     <h1>Vikranth P V R</h1>
     <p>Electronics & Communication Engineering Student</p>
+
+    <!-- 🔗 Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p>
         I am an Electronics and Communication Engineering student with interest in
@@ -104,7 +140,7 @@
     </p>
 </section>
 
-<section>
+<section id="projects">
     <h2>Projects</h2>
     <ul>
         <li><strong>Bluetooth RSSI Monitoring</strong> – ESP32 based signal strength analysis</li>
@@ -113,7 +149,7 @@
     </ul>
 </section>
 
-<section>
+<section id="achievements">
     <h2>Achievements</h2>
     <ul>
         <li>Completed Computer Vision mini projects</li>
@@ -121,14 +157,14 @@
     </ul>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:yourmail@email.com">yourmail@email.com</a></p>
     <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
 </section>
 
 <footer>
-    © 2026 Vikranth
+    © 2026 Vikranth P V R
 </footer>
 
 </body>
