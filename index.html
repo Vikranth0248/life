@@ -1,37 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikranth | Portfolio</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f5f7fb;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #222;
+            background: linear-gradient(135deg, #111827, #1f2933);
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
         section {
-            padding: 20px;
-            margin: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
         }
 
         h2 {
-            color: #333;
+            margin-top: 0;
+            color: #111827;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background: #222;
+            padding: 20px;
+            background: #111827;
             color: white;
+            margin-top: 40px;
+        }
+
+        /* 📱 Mobile friendly */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -39,43 +91,44 @@
 <body>
 
 <header>
-    <h1>Vikranth</h1>
-    <p>ECE Student | Aspiring Engineer</p>
+    <h1>Vikranth P V R</h1>
+    <p>Electronics & Communication Engineering Student</p>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
-        I am an Electronics and Communication Engineering student passionate about
-        technology, projects, and learning new skills.
+        I am an Electronics and Communication Engineering student with interest in
+        embedded systems, computer vision, and software development.
+        I enjoy building practical projects and continuously learning new technologies.
     </p>
 </section>
 
 <section>
     <h2>Projects</h2>
     <ul>
-        <li>Smart Traffic Light System</li>
-        <li>Bluetooth RSSI Monitoring using ESP32</li>
-        <li>Face Detection using Python</li>
+        <li><strong>Bluetooth RSSI Monitoring</strong> – ESP32 based signal strength analysis</li>
+        <li><strong>Face Detection System</strong> – Python & OpenCV</li>
+        <li><strong>Smart Traffic Light</strong> – Embedded system project</li>
     </ul>
 </section>
 
 <section>
     <h2>Achievements</h2>
     <ul>
-        <li>Completed XYZ Certification</li>
-        <li>Participated in ABC Hackathon</li>
+        <li>Completed Computer Vision mini projects</li>
+        <li>Hands-on experience with ESP32 & IoT</li>
     </ul>
 </section>
 
-<section>
+<section class="contact">
     <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>GitHub: https://github.com/yourusername</p>
+    <p>Email: <a href="mailto:yourmail@email.com">yourmail@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Your Name</p>
+    © 2026 Vikranth P V R
 </footer>
 
 </body>
