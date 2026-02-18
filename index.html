@@ -97,6 +97,53 @@
             margin-top: 40px;
         }
 
+        .project-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .project-row img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-row img:hover {
+            transform: scale(1.03);
+        }
+
+        .project-info {
+            max-width: 600px;
+        }
+
+       .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #111827;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .project-title:hover {
+            color: #2563eb;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .project-row {
+            flex-direction: column;
+            }
+
+        .project-row img {
+            width: 100%;
+            }
+        }
+
+
+
         /* Responsivity */
         @media (max-width: 600px) {
             nav a {
@@ -122,7 +169,7 @@
     <h1>Vikranth P V R</h1>
     <p>Electronics & Communication Engineering Student</p>
 
-    <!-- 🔗 Navigation Bar -->
+    <!--  Navigation Bar -->
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -138,13 +185,64 @@
     </p>
 </section>
 
-<section id="projects">
+    <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li><strong>Bluetooth RSSI Monitoring</strong> - ESP32 based signal strength analysis</li>
-        <li><strong>Face Detection System</strong> - Python & OpenCV</li>
-        <li><strong>Smart Traffic Light</strong> - Embedded system project</li>
-    </ul>
+
+    <div class="project-row">
+
+        <a href="wms.html">
+            <img src="wms.png" alt="Water Management System">
+        </a>
+
+        <div class="project-info">
+            <a href="wms.html" class="project-title">
+                Water Management System
+            </a>
+            <p>
+                An embedded system based automatic water management system 
+                designed to monitor and control water tank levels efficiently.
+            </p>
+        </div>
+    </div>
+    <div class="project-row">
+
+        <a href="thought-decoder.html">
+            <img src="thought-decoder.png" alt="Thought Decoder Device">
+        </a>
+
+        <div class="project-info">
+            <a href="thought-decoder.html" class="project-title">
+                Thought Decoder – Personal Assist Device
+            </a>
+            <p>
+                A conceptual personal assist device designed to interpret user intent 
+                and provide intelligent assistance using embedded systems and AI principles.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-row">
+
+        <a href="secured-gas-stove.html">
+            <img src="secured-gas-stove.png" alt="Secured Gas Stove System">
+        </a>
+
+        <div class="project-info">
+            <a href="secured-gas-stove.html" class="project-title">
+                Secured Gas Stove – Safety Monitoring System
+            </a>
+            <p>
+                An embedded safety system designed to detect gas leakage and automatically 
+                shut off the gas supply to prevent accidents.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+</section>
+
 </section>
 
 <section id="achievements">
